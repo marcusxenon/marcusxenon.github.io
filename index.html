@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Marcus Lindholm</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="description" content="Om Marcus Lindholms hemsida">
+	<link href="main.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="img/icon.png" rel="icon">
+	<script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script defer src="onscroll.js"></script>
+	
+
+</head>
+<body>
+	<div class="main">
+        <!--
+		<div class="navbar" id="myTopnav">
+				<a href="index.php"><img style="filter: invert(100%)" src="img/logo2.png" alt="Cynesige logo" height="auto" width="160px"></a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        -->
+		<div class="img_1">
+			<h1 class="rellax first_h animated fadeIn" data-animation="fadeIn" data-rellax-speed="2" id="animated_intro" >Website coming soon.</h1>
+			<div class="scrollarrow">
+                <span class="scrollspan"> 
+                    <a href="#footer"><img src="img/arrow.png" alt="scroll arrow button to scroll down" width="50px"></a>
+                </span>
+			</div>
+        </div>
+        <!--
+		<div class="about" id="about">
+			<h2 class="about_h" data-animation="fadeIn">About us</h2>
+			<p class="revealOnScroll fadeIn animated "id="animated_intro">Cynesige Web Development builds and designs modern responsive websites for your company. We are a team of two from Stockholm, Sweden who provide you with a sleek and modern looking website for your needs. Let us know if you have any personal preferences for your site since we focus on an individual approach to every new project.</p>
+		</div>
+	
+		<div class="services" id="services">
+			<h3 class="about_h">Services</h3>
+			<div class="revealOnScroll fadeIn animate service_list" data-animation="fadeIn" id="animated_intro">
+				<p class="service_h">Code</p>
+				<img src="img/code_icon.png" alt="code icon" height="50px" width="auto">
+				<p>While you bring us your ideas and preferences, we take care of all coding. This means that no knowledge is required from your side. Our vision is to code as efficient as possible in order to improve the performance of you website.</p>
+			</div>
+			<div class="revealOnScroll fadeIn animate service_list" data-animation="fadeIn" id="animated_intro">
+				<p class="service_h">Design / UI</p>
+				<img src="img/design_icon.png" alt="code icon" height="50px" width="auto">
+				<p>Nowadays people spend way more time with their phone than on the computer. Therefore is the mobile version at least as important as the regular one. Every website we design is responsive and works on all devices with different screens.</p>
+			</div>
+			<div class="revealOnScroll fadeIn animate service_list" data-animation="fadeIn" id="animated_intro">
+				<p class="service_h">SEO / Strategy</p>
+				<img src="img/strategy_icon.png" alt="code icon" height="50px" width="auto">
+				<p>We know the importance of being visible on search engines, hence we always make sure your webpage is completely optimized according to the guidelines search engines provide. Together with the client, we make a plan and a strategy for the project.</p>
+			</div>
+		</div>
+		<div class="support">
+			<p class="service_h">Support</p>
+			<img src="img/support.png" alt="code icon" height="50px" width="auto">
+			<p class="support_p">You own all the rights to your webpage as soon as we have delivered it to you. Therefore it is also your responibility if anything breaks or goes wrong. However, for a small additional fee per month we offer full support of your webpage in case anything happens, thus eliminating any trouble that you may have to deal with.</p>
+		</div>
+		<div class="services">
+			<h4 class="about_h">FAQ</h4>
+			
+			<input type="checkbox" id="faq0">
+  			<label for="faq0"><div class="question">How long does it take until the webpage is done?</div></label>
+			  <p class="answer" >The time it takes to complete a webpage depends on what project it is but for most web pages we are able to deliver it within a week.</p>
+			  <input type="checkbox" id="faq1">
+  			<label for="faq1"><div class="question">Do you provide hosting?</div></label>
+			  <p class="answer">No, we do not provide any hosting ourselves. However, we will make sure that your new website gets up and running on a host of your choice.</p>
+			  <input type="checkbox" id="faq2">
+  			<label for="faq2"><div class="question">Can I see my webpage while it is in progress?</div></label>
+			  <p class="answer">Yes, we will make sure that you are satisfied with the result before the delivery. If you have any questions about the website's current state, simply send us an email.</p>
+			  <input type="checkbox" id="faq3">
+  			<label for="faq3"><div class="question">What is your price per website?</div></label>
+  			<p class="answer">It depends on the size of the project, but our prices start at 5000 SEK.</p>
+
+			
+		</div>
+		<div class="contact" id="contact">
+			<h5 class="contact_h">Contact us</h5>
+			<p>Feel free to contact us if you have any questions or if you want to work together with us.</p>
+			<div>
+				<form action="" id="contactform" method="post" name="contactform">
+					<table width="500px">
+						<tr>
+							<td valign="top"><label for="first_name">First Name *</label></td>
+							<td valign="top"><input maxlength="50" name="first_name" size="30" type="text"></td>
+						</tr>
+						<tr>
+							<td valign="top"><label for="last_name">Last Name *</label></td>
+							<td valign="top"><input maxlength="50" name="last_name" size="30" type="text"></td>
+						</tr>
+						<tr>
+							<td valign="top"><label for="email">Email Address *</label></td>
+							<td valign="top"><input maxlength="80" name="email" size="30" type="text"></td>
+						</tr>
+						<tr>
+							<td valign="top"><label for="telephone">Telephone Number</label></td>
+							<td valign="top"><input maxlength="30" name="telephone" size="30" type="text"></td>
+						</tr>
+						<tr>
+							<td valign="top"><label for="comments">Comments *</label></td>
+							<td valign="top">
+							<textarea cols="25" maxlength="1000" name="comments" rows="6"></textarea></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center"><input type="submit" id="submit" value="Submit"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+        </div>
+        -->
+		<div class="footer" id="footer">
+			<div class="linkrow">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="linkrow">
+				<ul>
+                    <li><a href="https://www.facebook.com/marcuusl/" target="_blank"><img alt="facebook button" height="30px" src="img/facebook.png" width="auto"></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcus-lindholm/" target="_blank"><img alt="linkedin button" height="30px" src="img/linkedin.png" width="auto"></a></li>
+					<li><a href="https://www.instagram.com/marcuslindholm_/" target="_blank"><img alt="instagram button" height="30px" src="img/instagram.png" width="auto"></a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_logo">
+				<img alt="" height="60px" src="img/icon.png" width="auto">
+			</div>
+			<div class="copyright">
+			&copy; <?php echo date("Y"); ?> Copyright Marcus Lindholm
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="smoothscroll.js" defer></script>
+	<script src="mobile.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" >defer</script>
+	<script>
+	WebFont.load({
+		google: {
+		families: ['Roboto:300']
+		}
+	});
+	</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#ffffff"
+    }
+  }
+})});
+</script>
+
+
+	<script>
+		$(document).ready(function(){ 
+		$('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+		}); 
+	</script>
+	<script src="rellax.min.js"></script>
+	<script>
+	  // Accepts any class name
+	  var rellax = new Rellax('.rellax');
+	</script>
+    <script>
+            $(function() {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 1) {
+                    $('.navbar').addClass('scrolled');
+                }
+        
+                else {
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
+        })
+    </script>
+</body>
+</html>
